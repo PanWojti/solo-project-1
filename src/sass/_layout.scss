@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $color-background;
+}
+
+/* grid */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.row {
+  overflow: auto;
+}
+
+.col {
+  float: left;
+}
+
+.col-1 {
+  width: $column-width;
+}
+
+.col-2 {
+  width: 2*$column-width;
+}
+
+.col-3 {
+  width: 3*$column-width;
+}
+
+.col-4 {
+  width: 4*$column-width;
+}
+
+.col-5 {
+  width: 5*$column-width;
+}
+
+.col-6 {
+  width: 6*$column-width;
+}
+
+.col-7 {
+  width: 7*$column-width;
+}
+
+.col-8 {
+  width: 8*$column-width;
+}
+
+.col-9 {
+  width: 9*$column-width;
+}
+
+.col-10 {
+  width: 10*$column-width;
+}
+
+.col-11 {
+  width: 11*$column-width;
+}
+
+.col-12 {
+  width: 12*$column-width;
+}

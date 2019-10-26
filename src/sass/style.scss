@@ -2,3 +2,12 @@
 @import 'mixins';
 @import 'normalize';
 @import 'layout';
+
+/* Sections */
+@import 'sections/sidebar';
+@import 'sections/topbar';
+@import 'sections/dashboard-statistics';
+@import 'sections/dashboard-links';
+
+/* Pages */
+@import 'pages/dashboard';
