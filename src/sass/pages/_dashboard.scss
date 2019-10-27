@@ -16,7 +16,7 @@
 .stats {
   display: block;
   justify-content: center;
-  margin-top: 30px;
+  padding-top: 20px;
 }
 
 .stats-row {
@@ -50,4 +50,10 @@
 
 img {
   object-fit: contain;
+}
+
+.row-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
