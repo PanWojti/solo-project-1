@@ -1,0 +1,18 @@
+.btn {
+  i {
+    color: $color-light;
+    background-color: $color-secondary;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+  }
+}
+
+.btn-refresh {
+  margin: 0 10px;
+
+  i {
+    width: 40px;
+    padding-left: 12px;
+  }
+}

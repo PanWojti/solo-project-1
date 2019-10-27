@@ -45,5 +45,9 @@
     "stylelint": "^9.10.1",
     "stylelint-scss": "^3.5.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//PanWojti/solo-project-1.git"
+  },
   "description": ""
 }
