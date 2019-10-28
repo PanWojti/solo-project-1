@@ -1,0 +1,48 @@
+.chat-contact-picture {
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-image: url('../../images/photo-mikhael.png');
+  position: relative;
+}
+
+.chat-contact-list {
+  display: block;
+}
+
+.chat-contact {
+  display: inline-flex;
+}
+
+.chat-group {
+  padding-left: 20px;
+
+  h5 {
+    text-transform: uppercase;
+    color: $color-text-primary;
+  }
+}
+
+.chat-contact-name {
+  padding-top: 10px;
+
+  a {
+    vertical-align: middle;
+    font-size: 14px;
+    color: $color-light;
+    text-decoration: none;
+  }
+}
+
+.chat-contact-picture .dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 12px;
+  width: 12px;
+  background-color: $color-tertiary;
+  border-radius: 50%;
+  z-index: 4;
+}
