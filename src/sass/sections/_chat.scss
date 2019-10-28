@@ -8,6 +8,16 @@
   position: relative;
 }
 
+.minimized .chat-contact-picture {
+  margin-left: 10px;
+  margin-right: 0;
+  transition: $transition;
+}
+
+.minimized .chat-contact-name {
+  display: none;
+}
+
 .chat-contact-list {
   display: block;
 }

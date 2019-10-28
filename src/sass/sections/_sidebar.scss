@@ -7,6 +7,22 @@
   position: fixed;
   top: 10px;
   z-index: 2;
+  transition: $transition;
+}
+
+.sidebar.minimized {
+  width: 60px;
+  transition: $transition;
+}
+
+.minimized h1,
+.minimized .menu-pages-title,
+.minimized .chat-group {
+  display: none;
+}
+
+.minimized .logo a {
+  margin-left: 15px;
 }
 
 .menu-pages-title {
@@ -60,6 +76,10 @@
   }
 }
 
+.menu-pages ul .hidden-topbar {
+  display: none;
+}
+
 .menu-pages ul li a {
   &:hover {
     color: $color-light;
@@ -79,7 +99,12 @@
 .icon-banners:before,
 .icon-personaldata:before,
 .icon-payout:before,
-.icon-postback:before {
+.icon-postback:before,
+.icon-wallet:before,
+.icon-notification:before,
+.icon-profile:before,
+.icon-quit:before,
+.icon-arrow-down:before {
   font-size: 18px;
   color: $color-text-primary;
   vertical-align: middle;

@@ -5,10 +5,15 @@
   color: $color-light;
   line-height: 40px;
   text-decoration: none;
+  transition: $transition;
 
   i {
     line-height: 40px;
   }
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 .btn-refresh {

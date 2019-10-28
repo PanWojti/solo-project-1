@@ -28,6 +28,10 @@
   }
 }
 
+.topbar.hidden {
+  display: none;
+}
+
 .topbar ul li a {
   display: inline-block;
   height: 83.333333%;
