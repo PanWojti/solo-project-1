@@ -1,6 +1,113 @@
 .sidebar {
   height: 100vh;
+  width: 250px;
   background-color: $color-dark1;
   color: $color-light;
   border: 1px solid #008B8B;
+  position: fixed;
+  top: 10px;
+  z-index: 2;
+}
+
+.menu-pages-title {
+  color: $color-text-primary;
+}
+
+.logo {
+  display: inline-flex;
+  height: 60px;
+
+  a {
+    margin: 20px 20px;
+    color: $color-text-primary;
+  }
+}
+
+.hamburger {
+  display: block;
+  float: right;
+
+  i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.menu-pages {
+  padding: 0;
+  display: block;
+
+  ul {
+    display: block;
+    list-style-type: none;
+    float: left;
+    line-height: 42px;
+    padding: 0;
+    width: 100%;
+
+    li {
+      width: 100%;
+
+      a {
+        display: block;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+.menu-pages ul li a {
+  &:hover {
+    color: $color-light;
+    border-left: 4px solid $color-secondary;
+  }
+
+  span {
+    padding-left: 20px;
+  }
+
+}
+
+.menu-pages ul
+.icon-general:before,
+.icon-details:before,
+.icon-links:before,
+.icon-banners:before,
+.icon-personaldata:before,
+.icon-payout:before,
+.icon-postback:before {
+  font-size: 18px;
+  color: $color-text-primary;
+  vertical-align: middle;
+}
+
+.icon-general:before {
+  content: "\004b";
+}
+
+.icon-details:before {
+  content: "\004a";
+}
+
+.icon-links:before {
+  content: "\004c";
+}
+
+.icon-banners:before {
+  content: "\0047";
+}
+
+.icon-personaldata:before {
+  content: "\0053";
+}
+
+.icon-payout:before {
+  content: "\0052";
+}
+
+.icon-postback:before {
+  content: "\0055";
 }

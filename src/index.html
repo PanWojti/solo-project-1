@@ -10,50 +10,68 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col col-2 sidebar">
-          <h1>Just do it</h1>
+
+  <!-- Topbar -->
+
+  <div class="topbar">
+    <ul>
+      <li>
+        <a href="#" class="quit">
+          <span class="icon-quit"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="profile">
+          <span class="icon-profile"></span>
+          Leonardo Dicaprio
+        </a>
+      </li>
+      <li>
+        <a href="#" class="notification">
+          <span class="icon-notification"></span>
+          <span class="dot"></span>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">
+          <span class="icon-wallet"></span>
+          $1,500.00
+          <span class="icon-arrow-down"></span>
+        </a>
+        <div class="dropdown-content">
+          <a href="#">A</a>
+          <a href="#">B</a>
         </div>
-        <div class="col col-10">
-          <div class="row">
-            <div class="topbar">
-              <ul>
-                <li>
-                  <a href="#" class="quit">
-                    <span class="icon-quit"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="profile">
-                    <span class="icon-profile"></span>
-                    Leonardo Dicaprio
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="notification">
-                    <span class="icon-notification"></span>
-                    <span class="dot"></span>
-                  </a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropbtn">
-                    <span class="icon-wallet"></span>
-                    $1,500.00
-                    <span class="icon-arrow-down"></span>
-                  </a>
-                  <div class="dropdown-content">
-                    <a href="#">A</a>
-                    <a href="#">B</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+      </li>
+    </ul>
+  </div>
+
+
+<!-- Sidebar -->
+
+  <div class="sidebar">
+    <div class="menu">
+      <div class="col-12 logo">
+        <h1>Just do it</h1>
+        <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+      </div>
+      <div class="col-12 menu-pages">
+        <ul>
+          <li><a href="#"><span class="icon-general"></span><span class="menu-pages-title">General</span></a></li>
+          <li><a href="#"><span class="icon-details"></span><span class="menu-pages-title">Details</span></a></li>
+          <li><a href="#"><span class="icon-links"></span><span class="menu-pages-title">Links</span></a></li>
+          <li><a href="#"><span class="icon-banners"></span><span class="menu-pages-title">Banners</span></a></li>
+          <li><a href="#"><span class="icon-personaldata"></span><span class="menu-pages-title">Personal data</span></a></li>
+          <li><a href="#"><span class="icon-payout"></span><span class="menu-pages-title">Payout</span></a></li>
+          <li><a href="#"><span class="icon-postback"></span><span class="menu-pages-title">Postback</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 <!-- Dashboard Statistics -->
-
-          <div class="row">
+<div class="container">
+  <div class="row home">
 
             <div class="dashboard-statistics section-title">
               <h3>General Statistic</h3>
@@ -102,11 +120,9 @@
               </div>
             </div>
 
-          </div>
+<!-- Dashboard Links Start -->
 
-<!-- Dashboard Links -->
-
-          <div class="row">
+          <div class="row links-container">
 
     <!-- Title Links -->
 
@@ -193,7 +209,9 @@
 
           </div>
 
-        </div>
+<!-- Dashboard Links End -->
+
+
       </div>
     </div>
 

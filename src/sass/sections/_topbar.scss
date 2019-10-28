@@ -1,31 +1,41 @@
 .topbar {
   background-color: $color-light;
   box-shadow: 0 0 10px #DCDCDC;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
+  height: 60px;
+  position: fixed;
+  z-index: 1;
   float: right;
-  border-left: 1px solid $color-background;
+  width: 100%;
+  top: 0;
+  right: 20px;
+
+  ul {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      float: right;
+      height: 100%;
+      border-left: 1px solid $color-background;
+
+      &:hover, .dropdown:hover .dropbtn {
+        background-color: $color-background;
+      }
+    }
+  }
 }
 
-li a {
+.topbar ul li a {
   display: inline-block;
-  padding: 8px 20px;
+  height: 83.333333%;
+  padding: 0 20px;
   text-decoration: none;
   line-height: 42px;
-}
+  margin-top: 10px;
 
-li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: $color-background;
 }
 
 /* dropdown */
@@ -43,40 +53,46 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.topbar .dropdown-content a {
   color: $color-dark1;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
   line-height: 21px;
+  margin-top: 0;
 }
 
 .dropdown-content a:hover {
   background-color: $color-background;
 }
 
-.dropdown:hover .dropdown-content {
+.topbar .dropdown:hover .dropdown-content {
   display: block;
 }
 
 li .dropbtn,
 .dropdown-content {
   font-size: 20px;
-  color: $color-text;
+  color: $color-text-primary;
   font-weight: 400;
+}
+
+.icon-wallet:before,
+.icon-arrow-down:before,
+.icon-notification:before,
+.icon-profile:before,
+.icon-quit:before {
+  font-size: 16px;
+  vertical-align: middle;
 }
 
 .icon-wallet:before {
   content: "\0062";
-  font-size: 16px;
-  margin-right: 15px;
 }
 
 .icon-arrow-down:before {
   content: "\0041";
-  font-size: 10px;
-  margin-left: 15px;
 }
 
 /* notification */
@@ -89,7 +105,7 @@ li .dropbtn,
 
 .notification .dot {
   position: absolute;
-  top: 18px;
+  top: 12px;
   right: 18px;
   height: 8px;
   width: 8px;
@@ -99,8 +115,6 @@ li .dropbtn,
 
 .icon-notification:before {
   content: "\0050";
-  font-size: 16px;
-  color: $color-text;
 }
 
 /* profile */
@@ -115,12 +129,14 @@ li .dropbtn,
 
 .icon-profile:before {
   content: "\0056";
-  font-size: 16px;
-  color: $color-text;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
-/* exit */
+/* quit */
+
+.icon-quit:before {
+  content: "\0057";
+}
 
 .quit {
   padding-top: 11px;
