@@ -1,11 +1,13 @@
 .main {
   max-width: 1280px;
-  margin: 0 20px 0 250px;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
   background-color: $color-background;
 }
 
 .main.expanded {
-  margin: 0 20px 0 60px;
+  margin: 0 20px 0 $sidebar-width-sm;
   transition: $transition;
 }
 
@@ -47,7 +49,9 @@
 }
 
 img {
-  object-fit: scale-down;
+  //object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .row-links {

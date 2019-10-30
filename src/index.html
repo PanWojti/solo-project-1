@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -52,7 +53,7 @@
   <div class="sidebar">
     <div class="menu">
       <div class="col-12 logo">
-        <h1>Just do it</h1>
+        <div class="logo-icon"></div>
         <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
       </div>
       <div class="col-12 menu-pages">
@@ -100,10 +101,11 @@
 
             <div class="dashboard-statistics">
               <div class="row date-picker">
-                <form>
-                  <input id="start-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-09-31">
-                  <input id="end-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-10-31">
-                </form>
+                <div class="row calendar-border">
+                  <input id="start-date" type="text" value="2019-09-01">
+                  <input id="end-date" type="text" value="2019-09-01">
+                  <a href="#"><span class="icon-calendar"></span></a>
+                </div>
                 <a href="#" class="btn btn-refresh"><i class="fas fa-redo"></i></a>
               </div>
             </div>

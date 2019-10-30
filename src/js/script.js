@@ -1,14 +1,5 @@
 'use-strict';
 
-//function toggleMenu(visible) {
-//  document.querySelector('.menu').classList.toggle('show', visible)
-//}
-
-//document.querySelector('.hamburger').addEventListener('click', function(e) {
-//  e.preventDefault();
-//  toggleMenu()
-//});
-
 if (screen.width < 576) {
   document.querySelector('.main').classList.add('expanded');
   document.querySelector('.sidebar').classList.add('minimized');

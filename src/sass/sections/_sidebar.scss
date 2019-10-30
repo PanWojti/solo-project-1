@@ -1,7 +1,7 @@
 .sidebar {
   height: 100vh;
-  width: 250px;
-  background-color: $color-dark1;
+  width: $sidebar-width-lg;
+  background-color: $color-sidebar-background;
   color: $color-light;
   border: 1px solid #008B8B;
   position: fixed;
@@ -11,8 +11,12 @@
 }
 
 .sidebar.minimized {
-  width: 60px;
+  width: $sidebar-width-sm;
   transition: $transition;
+
+  .menu .logo .logo-icon {
+    display: none;
+  }
 }
 
 .minimized h1,
@@ -22,7 +26,7 @@
 }
 
 .minimized .logo a {
-  margin-left: 15px;
+  margin-left: 22px;
 }
 
 .menu-pages-title {
@@ -30,24 +34,24 @@
 }
 
 .logo {
-  display: inline-flex;
+  display: flex;
   height: 60px;
+  justify-content: space-between;
 
   a {
-    margin: 20px 20px;
-    color: $color-text-primary;
+    margin: 21px 22px;
+    color: $color-hamburger;
   }
 }
 
 .hamburger {
-  display: block;
-  float: right;
+  height: 18px;
 
   i {
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    width: 16px;
+    height: 18px;
+    line-height: 18px;
   }
 }
 
@@ -90,7 +94,6 @@ ul.hidden-topbar.visible {
 
 .menu-pages ul li a {
   &:hover {
-    color: $color-light;
     border-left: 4px solid $color-secondary;
   }
 
@@ -144,4 +147,12 @@ ul.hidden-topbar.visible {
 
 .icon-postback:before {
   content: "\0055";
+}
+
+.logo-icon {
+  background-image: url("../../images/logo.png");
+  width: 86px;
+  height: 23px;
+  margin-left: 20px;
+  margin-top: 18px;
 }

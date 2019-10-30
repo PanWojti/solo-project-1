@@ -31,7 +31,7 @@
   color: $color-text-secondary;
 }
 
-.icon-links, .icon-trash {
+.row-icons .icon-links, .icon-trash {
   opacity: 0;
   color: $color-text-primary;
   transition: all 1s;
@@ -42,12 +42,22 @@
   opacity: 1;
 }
 
+.icon-trash:before {
+  font-size: 18px;
+  color: $color-text-primary;
+  vertical-align: middle;
+}
+
 .row-links-item:hover {
   background-color: $color-background;
   cursor: pointer;
 }
 
-.icon-links:hover, .icon-trash:hover {
+.row-icons .icon-links:hover::before {
+  color: $color-secondary;
+}
+
+.row-icons .icon-trash:hover::before {
   color: $color-secondary;
 }
 

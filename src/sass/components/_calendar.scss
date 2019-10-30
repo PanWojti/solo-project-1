@@ -1,0 +1,16 @@
+.calendar-border {
+  border: 1px solid grey;
+  border-radius: 5px;
+  vertical-align: middle;
+
+  a .icon-calendar:before {
+    margin: 10px 10px;
+  }
+}
+
+#start-date, #end-date {
+  width: 120px;
+  border: none;
+  padding-left: 10px;
+  margin-left: 10px;
+}

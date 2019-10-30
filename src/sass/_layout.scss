@@ -81,9 +81,10 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 15px;
   text-transform: capitalize;
-  color: #778899;
+  color: #a6a6a6;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -98,7 +99,7 @@ p {
   }
 
   .main {
-    margin-left: 60px!important;
+    margin-left: $sidebar-width-sm;
   }
 
   .row-links-item {
@@ -124,7 +125,7 @@ p {
   }
 
   .main {
-    margin-left: 60px!important;
+    margin-left: $sidebar-width-sm;
   }
 
   .row-links-item .icon-links, .row-links-item .icon-trash {
@@ -135,6 +136,13 @@ p {
 @media(min-width: 992px) {
   @include grid('lg');
 
+  .main {
+    margin-left: $sidebar-width-lg;
+  }
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 0;
+  }
 }
 
 @media(min-width: 1200px) {
