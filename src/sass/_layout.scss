@@ -8,13 +8,19 @@ body {
 }
 
 /* grid */
+.container {
+  display: flex;
+}
 
 .row {
-  overflow: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .col {
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .col-1 {
@@ -82,4 +88,55 @@ h4 {
 
 p {
   font-size: 18px;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .main {
+    margin-left: 60px!important;
+  }
+
+  .row-links-item {
+    flex-direction: column;
+  }
+
+  .page-name, .link-address {
+    text-align: center;
+    padding-left: 0!important;
+  }
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+
+  .row-links-item {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .main {
+    margin-left: 60px!important;
+  }
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

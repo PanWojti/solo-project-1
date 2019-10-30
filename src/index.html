@@ -64,16 +64,17 @@
           <li><a href="#"><span class="icon-personaldata"></span><span class="menu-pages-title">Personal data</span></a></li>
           <li><a href="#"><span class="icon-payout"></span><span class="menu-pages-title">Payout</span></a></li>
           <li><a href="#"><span class="icon-postback"></span><span class="menu-pages-title">Postback</span></a></li>
-
-          <li class="hidden-topbar"><a href="#"><span class="icon-wallet"></span><span class="menu-pages-title">$1,500.00</span><span class="icon-arrow-down menu-pages-title"></span></a></li>
-          <li class="hidden-topbar"><a href="#"><span class="icon-notification"></span><span class="menu-pages-title">Notifications</span></a></li>
-          <li class="hidden-topbar"><a href="#"><span class="icon-profile"></span><span class="menu-pages-title">Leonardo Dicaprio</span></a></li>
-          <li class="hidden-topbar"><a href="#"><span class="icon-quit"></span><span class="menu-pages-title">Logout</span></a></li>
+        </ul>
+        <ul class="hidden-topbar">
+          <li><a href="#"><span class="icon-wallet"></span><span class="menu-pages-title">$1,500.00</span><span class="icon-arrow-down menu-pages-title"></span></a></li>
+          <li><a href="#"><span class="icon-notification"></span><span class="menu-pages-title">Notifications</span></a></li>
+          <li><a href="#"><span class="icon-profile"></span><span class="menu-pages-title">Leonardo Dicaprio</span></a></li>
+          <li><a href="#"><span class="icon-quit"></span><span class="menu-pages-title">Logout</span></a></li>
         </ul>
       </div>
       <div class="chat">
         <div class="chat-group">
-          <h5>your manager<h5>
+          <h5>your manager</h5>
         </div>
         <div class="chat-contact-list">
           <div class="chat-contact">
@@ -90,59 +91,69 @@
   </div>
 
 <!-- Dashboard Statistics -->
-<div class="container">
-  <div class="row home">
+<div class="main">
+  <div class="home">
 
             <div class="dashboard-statistics section-title">
               <h3>General Statistic</h3>
             </div>
 
             <div class="dashboard-statistics">
-              <div class="date-picker">
-                <input id="start-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-09-31">
-                <input id="end-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-10-31">
+              <div class="row date-picker">
+                <form>
+                  <input id="start-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-09-31">
+                  <input id="end-date" type="date" value="2019-09-01" min="2018-01-01" max="2019-10-31">
+                </form>
                 <a href="#" class="btn btn-refresh"><i class="fas fa-redo"></i></a>
               </div>
             </div>
 
-            <div class="dashboard-statistics">
-              <div class="stats">
-                <div class="col-8 stats-col">
+            <div class="dashboard-statistics col">
+
+
+
+                <div class="col col-sm-12 col-md-8">
                   <div class="row stats-row">
-                    <div class="col-5">
-                      <div class="stats-item">
+
+                    <div class="col col-sm-12 col-md-5">
+                      <div class="stats-item row">
                         <h4>visit signups</h4>
                         <p>124</p>
                       </div>
-                      <div class="stats-item">
+                      <div class="stats-item row">
                         <h4>FTD</h4>
                         <p>445</p>
                       </div>
                     </div>
-                    <div class="col-5">
-                      <div class="stats-item">
+
+
+                    <div class="col col-sm-12 col-md-5">
+                      <div class="stats-item row">
                         <h4>net deposit</h4>
                         <p>564</p>
                       </div>
-                      <div class="stats-item">
+                      <div class="stats-item row">
                         <h4>turn over</h4>
                         <p>432</p>
                       </div>
                     </div>
+
                   </div>
                 </div>
-              </div>
-              <div class="graph">
-                <div class="col-8 chart-title">
+
+
+
+              <div class="chart col col-sm-12 col-md-8">
+                <!--<div class="col chart-title">-->
                   <h4>Earnings chart</h4>
                   <img src="images/graph.png">
-                </div>
+                <!--</div>-->
               </div>
             </div>
 
 <!-- Dashboard Links Start -->
 
-          <div class="row links-container">
+          <div class="links-container">
 
     <!-- Title Links -->
 
@@ -152,72 +163,92 @@
 
     <!-- Actual Links -->
 
-            <div class="dashboard-links">
-              <div class="row row-links">
+            <div class="col dashboard-links">
+              <div class="row-links">
                 <a href="#" class="btn btn-add">+ add new</a>
               </div>
 
-              <div class="col-8 links-wrapper">
+              <div class="col col-sm-12 col-md-10 col-lg-8 links-wrapper">
 
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Home page</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.homepage.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Home page</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.homepage.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Currently offer</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.currently.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Currently offer</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.currently.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Blurpix</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.blurpix.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Blurpix</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.blurpix.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Your site</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.yoursite.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Your site</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.yoursite.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Google</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.google.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Google</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.google.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Facebook</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.facebook.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Facebook</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.facebook.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Dashboard</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.dashboard.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Dashboard</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.dashboard.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Blurax</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.blurax.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Blurax</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.blurax.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Piece of wine</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.pieceofwine.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Piece of wine</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.pieceofwine.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
                 <div class="row row-links-item">
-                  <div class="col-5 page-name">Twitter</div>
-                  <div class="col-5"><a href="#" class="page-link">http://www.twitter.com</a></div>
-                  <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                  <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                  <div class="col-sm-12 col-md-5 page-name">Twitter</div>
+                  <div class="col-sm-12 col-md-5 link-address"><a href="#" class="page-link">http://www.twitter.com</a></div>
+                  <div class="row row-icons">
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-links"></span></a></div>
+                    <div class="col col-6"><a href="#" class="col"><span class="icon-trash"></span></a></div>
+                  </div>
                 </div>
 
               </div>

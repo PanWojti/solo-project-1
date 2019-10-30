@@ -10,9 +10,11 @@
 //});
 
 if (screen.width < 576) {
-  document.querySelector('.container').classList.add('expanded');
+  document.querySelector('.main').classList.add('expanded');
   document.querySelector('.sidebar').classList.add('minimized');
   document.querySelector('.topbar').classList.add('hidden');
+  document.querySelector('.hidden-topbar').classList.add('visible');
+  console.log('screen width < 576');
 
 }
 
@@ -20,7 +22,7 @@ if (screen.width < 576) {
 
 function toggleMenu(visible) {
   document.querySelector('.sidebar').classList.toggle('minimized', visible);
-  document.querySelector('.container').classList.toggle('expanded', visible);
+  document.querySelector('.main').classList.toggle('expanded', visible);
 }
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {

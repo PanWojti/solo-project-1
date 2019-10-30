@@ -54,6 +54,7 @@
 .menu-pages {
   padding: 0;
   display: block;
+  border-bottom: 1px solid $color-text-primary;
 
   ul {
     display: block;
@@ -62,7 +63,6 @@
     line-height: 42px;
     padding: 0;
     width: 100%;
-    border-bottom: 1px solid $color-text-primary;
 
     li {
       width: 100%;
@@ -76,8 +76,16 @@
   }
 }
 
-.menu-pages ul .hidden-topbar {
+.menu-pages .hidden-topbar {
   display: none;
+}
+
+.menu-pages .hidden-topbar.visible {
+  display: block;
+}
+
+ul.hidden-topbar.visible {
+  margin-top: 0;
 }
 
 .menu-pages ul li a {
