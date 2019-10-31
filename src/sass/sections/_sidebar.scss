@@ -2,8 +2,6 @@
   height: 100vh;
   width: $sidebar-width-lg;
   background-color: $color-sidebar-background;
-  color: $color-light;
-  border: 1px solid #008B8B;
   position: fixed;
   top: 10px;
   z-index: 2;
@@ -29,8 +27,15 @@
   margin-left: 22px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-pages-title {
-  color: $color-text-primary;
+  color: $color-hamburger;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .logo {
@@ -58,7 +63,6 @@
 .menu-pages {
   padding: 0;
   display: block;
-  border-bottom: 1px solid $color-text-primary;
 
   ul {
     display: block;
@@ -67,12 +71,15 @@
     line-height: 42px;
     padding: 0;
     width: 100%;
+    margin-block-start: 0!important;
 
     li {
       width: 100%;
+      background-color: $color-sidebar-background;
 
       a {
         display: block;
+        background-color: $color-sidebar-background;
         text-decoration: none;
         margin: 5px 0;
       }
@@ -95,6 +102,25 @@ ul.hidden-topbar.visible {
 .menu-pages ul li a {
   &:hover {
     border-left: 4px solid $color-secondary;
+    background-color: $color-sidebar-hover;
+
+    span {
+      color: #e2e2e2;
+    }
+
+    .icon-general:before,
+    .icon-details:before,
+    .icon-links:before,
+    .icon-banners:before,
+    .icon-personaldata:before,
+    .icon-payout:before,
+    .icon-postback:before,
+    .icon-quit:before,
+    .icon-profile:before,
+    .icon-wallet:before,
+    .icon-arrow-down:before {
+      color: #e2e2e2;
+    }
   }
 
   span {
@@ -117,7 +143,7 @@ ul.hidden-topbar.visible {
 .icon-quit:before,
 .icon-arrow-down:before {
   font-size: 18px;
-  color: $color-text-primary;
+  color: $color-hamburger;
   vertical-align: middle;
 }
 

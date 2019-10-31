@@ -22,7 +22,7 @@
 .page-name {
   font-size: 18px;
   font-weight: 700;
-  color: $color-text-primary;
+  color: $color-dashboard-text;
   padding-left: 20px;
 }
 
@@ -33,7 +33,7 @@
 
 .row-icons .icon-links, .icon-trash {
   opacity: 0;
-  color: $color-text-primary;
+  color: $color-dashboard-text;
   transition: all 1s;
   text-decoration: none;
 }
@@ -44,7 +44,7 @@
 
 .icon-trash:before {
   font-size: 18px;
-  color: $color-text-primary;
+  color: $color-dashboard-text;
   vertical-align: middle;
 }
 

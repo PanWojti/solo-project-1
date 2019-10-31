@@ -1,7 +1,17 @@
 .section-title {
+  display: flex;
   text-transform: uppercase;
-  color: $color-text-primary;
-  padding-left: 20px;
+  color: $color-dashboard-text;
   border: 1px solid #008B8B;
   margin-top: 20px;
+  padding: 12px 0;
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }

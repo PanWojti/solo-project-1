@@ -1,6 +1,10 @@
+.chat {
+  border-top: 1px solid #333333;
+}
+
 .chat-contact-picture {
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
   z-index: 3;
   margin-left: 20px;
   margin-right: 10px;
@@ -9,7 +13,7 @@
 }
 
 .minimized .chat-contact-picture {
-  margin-left: 10px;
+  margin-left: 8px;
   margin-right: 0;
   transition: $transition;
 }
@@ -22,6 +26,10 @@
   display: block;
 }
 
+.sidebar.minimized .chat-contact-list {
+  margin-top: 20px;
+}
+
 .chat-contact {
   display: inline-flex;
 }
@@ -31,7 +39,10 @@
 
   h5 {
     text-transform: uppercase;
-    color: $color-text-primary;
+    color: $color-hamburger;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 
@@ -41,8 +52,9 @@
   a {
     vertical-align: middle;
     font-size: 14px;
-    color: $color-light;
+    color: $color-chat-contact;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
