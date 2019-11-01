@@ -94,13 +94,6 @@ p {
 @media(max-width: 767px) {
   @include grid('sm');
 
-  .stats-row {
-    flex-direction: column;
-  }
-
-  .main {
-    margin-left: $sidebar-width-sm;
-  }
 
   .row-links-item {
     flex-direction: column;
@@ -114,37 +107,61 @@ p {
   .row-links-item .icon-links, .row-links-item .icon-trash {
     opacity: 1;
   }
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .home {
+    padding-top: 20px!important;
+  }
+
+  .calendar-border {
+    flex-direction: column;
+  }
+
+  .date-picker {
+    flex-direction: column;
+
+    .btn {
+      margin: 10px auto;
+    }
+  }
+
+  .hidden-icon {
+    display: block!important;
+  }
 }
 
 @media(min-width: 768px) {
   @include grid('md');
+
+  .main {
+    margin-left: $sidebar-width-sm;
+  }
 
   .row-links-item {
     height: 56px;
     line-height: 56px;
   }
 
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 1;
+  }
+
   .main {
     margin-left: $sidebar-width-sm;
   }
 
-  .row-links-item .icon-links, .row-links-item .icon-trash {
-    opacity: 1;
-  }
 }
 
 @media(min-width: 992px) {
   @include grid('lg');
 
-  .main {
-    margin-left: $sidebar-width-lg;
-  }
-
   .row-links-item .icon-links, .row-links-item .icon-trash {
     opacity: 0;
   }
-}
 
-@media(min-width: 1200px) {
-  @include grid('xl');
+  .main {
+    margin-left: $sidebar-width-lg;
+  }
 }

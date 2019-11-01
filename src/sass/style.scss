@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'normalize';
-@import 'layout';
+
 
 /* Components */
 @import 'components/section-title';
@@ -17,3 +17,6 @@
 
 /* Pages */
 @import 'pages/dashboard';
+
+/* Layout */
+@import 'layout';

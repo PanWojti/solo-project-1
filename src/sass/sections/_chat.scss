@@ -32,6 +32,11 @@
 
 .chat-contact {
   display: inline-flex;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-sidebar-hover;
+  }
 }
 
 .chat-group {

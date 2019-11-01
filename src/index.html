@@ -24,7 +24,9 @@
       <li>
         <a href="#" class="profile">
           <span class="icon-profile"></span>
+          <span class="profile-name">
           Leonardo Dicaprio
+        </span>
         </a>
       </li>
       <li>
@@ -36,7 +38,9 @@
       <li class="dropdown">
         <a href="#" class="dropbtn">
           <span class="icon-wallet"></span>
+          <span class="amount">
           $1,500.00
+        </span>
           <span class="icon-arrow-down"></span>
         </a>
         <div class="dropdown-content">
@@ -94,7 +98,7 @@
 <!-- Dashboard Statistics -->
 <div class="main">
   <div class="home">
-
+          <div class="shadow-wrapper">
             <div class="dashboard-statistics section-title">
               <h3>General Statistic</h3>
             </div>
@@ -102,9 +106,14 @@
             <div class="dashboard-statistics calendar">
               <div class="row date-picker">
                 <div class="row calendar-border">
-                  <input id="start-date" type="text" value="2019-09-01">
-                  <input id="end-date" type="text" value="2019-09-01">
-                  <a href="#"><span class="icon-calendar"></span></a>
+                  <div class="row calendar-input-row">
+                    <input id="start-date" type="text" value="2019-09-01">
+                    <a href="#"><span class="icon-calendar hidden-icon"></span></a>
+                  </div>
+                  <div class="row calendar-input-row">
+                    <input id="end-date" type="text" value="2019-09-01">
+                    <a href="#"><span class="icon-calendar"></span></a>
+                  </div>
                 </div>
                 <a href="#" class="btn btn-refresh"><i class="fas fa-redo"></i></a>
               </div>
@@ -152,6 +161,7 @@
                 <!--</div>-->
               </div>
             </div>
+
 
 <!-- Dashboard Links Start -->
 
@@ -263,7 +273,7 @@
           </div>
 
 <!-- Dashboard Links End -->
-
+        </div>
 
       </div>
     </div>
