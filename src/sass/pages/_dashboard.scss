@@ -1,7 +1,7 @@
 .main {
   max-width: 1280px;
   margin-top: 0;
-  margin-right: 20px;
+  //margin-right: 20px;
   margin-bottom: 0;
   background-color: $color-background;
 }
@@ -12,8 +12,7 @@
 }
 
 .home {
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding: 80px 20px 20px 20px;
 }
 
 .date-picker {
@@ -77,5 +76,30 @@ img {
 }
 
 .shadow-wrapper {
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
 
+@media(max-width: 767px) {
+  @include grid('sm');
+
+  .home {
+    padding-top: 20px!important;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+
+  .main {
+    margin-left: $sidebar-width-sm;
+  }
+
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+
+  .main {
+    margin-left: $sidebar-width-lg;
+  }
 }

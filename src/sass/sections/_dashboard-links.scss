@@ -1,8 +1,6 @@
 .dashboard-links {
   background-color: $color-light;
   border-bottom: 1px solid #e3e3e3;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .row-links-item {
@@ -70,4 +68,33 @@
 
 .row-icons {
   width: 100%;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+
+  .row-links-item {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+
+  .row-links-item .icon-links, .row-links-item .icon-trash {
+    opacity: 0;
+  }
 }
