@@ -6,6 +6,10 @@
   line-height: 40px;
   text-decoration: none;
   transition: $transition;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
 
   i {
     line-height: 40px;
@@ -21,13 +25,14 @@
   width: 40px;
 
   i {
-    width: 40px;
+    width: 15px;
+    height: 15px;
     padding-left: 12px;
   }
 }
 
 .btn-add {
-  width: 120px;
+  width: 127px;
   font-size: 20px;
   display: flex;
   justify-content: center;
